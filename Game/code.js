@@ -6,9 +6,15 @@ window.onload = function() {
 	ctx.arc(95,50,40,0,2*Math.PI);
 	ctx.stroke();
 
-	var c = document.getElementById("line");
-	var ctx1 = c.getContext("2d");
-	ctx1.moveTo(0,0);
-	ctx1.lineTo(50,50);
+	var l = document.getElementById("line");
+	var ctx1 = l.getContext("2d");
+	ctx1.moveTo(50,0);
+	ctx1.lineTo(100,100);
 	ctx1.stroke();
 }
+
+$(document).ready(function(){
+    $("input#hide").click(function(){
+        $("#circle").hide();
+    });
+}); 
