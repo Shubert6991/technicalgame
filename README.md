@@ -1,2 +1,4 @@
 # technicalgame
 hangman
+
+ahorcado
